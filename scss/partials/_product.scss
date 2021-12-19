@@ -1,0 +1,40 @@
+.container__product {
+  margin-top: 6rem;
+  height: 100%;
+  width: 95%;
+
+  .product__image {
+    @extend .thumbnail;
+    background: $light;
+
+    img {
+      height: unset;
+    }
+    @extend .col;
+    cursor: crosshair;
+  }
+
+  .product__btn {
+    background: $lbrown;
+    border: none;
+    max-width: 300px;
+    padding: 0.85rem;
+    border-radius: 5px;
+    font-family: getFont(primary);
+    color: $light;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      transition: all 0.2s ease;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (min-width: 997px) {
+  .container__product {
+    height: calc(100% - 60px);
+  }
+}

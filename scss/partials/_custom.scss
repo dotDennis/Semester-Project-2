@@ -1,0 +1,28 @@
+$black: #343434;
+$light: #ededec;
+$orange: #d9851e;
+$lbrown: #a65b14;
+$dbrown: #8c4216;
+
+.bg-light {
+  background: $light !important;
+}
+
+.bg-dark {
+  background: $black !important;
+}
+
+$fonts: (
+  primary: (
+    "Open Sans",
+    sans-serif,
+  ),
+  heading: (
+    "Dosis",
+    sans-serif,
+  ),
+);
+
+@function getFont($font) {
+  @return map-get($fonts, $font);
+}

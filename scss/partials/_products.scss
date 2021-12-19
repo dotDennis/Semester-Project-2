@@ -1,0 +1,24 @@
+.category__title {
+  text-transform: capitalize;
+}
+
+main {
+  margin-top: calc(60px + 6rem);
+
+  .category__top {
+    margin: 0 12px;
+    display: flex;
+
+    input {
+      @extend .input;
+      color: $black;
+      padding: 0.6rem;
+      border: 1px solid $black;
+      border-radius: 0;
+      margin-left: 40px;
+    }
+  }
+  .lead {
+    font-size: calc(0.6rem + 1vw);
+  }
+}

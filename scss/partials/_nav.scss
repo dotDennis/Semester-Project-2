@@ -1,0 +1,39 @@
+.navbar {
+  background: rgba($light, 0.95) !important;
+
+  padding: 10px 2rem;
+
+  a.nav-link {
+    color: $black !important;
+    font-size: 1.1rem;
+
+    &:hover {
+      color: $dbrown !important;
+      border-bottom: 2px solid $dbrown;
+    }
+  }
+
+  .navbar__icon {
+    color: $black;
+
+    &:hover {
+      color: $dbrown;
+    }
+
+    span {
+      font-size: 1.6rem;
+    }
+  }
+  /* to fix a bootstrap setting, that unintentionally unaligned the logo vertically. */
+  .navbar-brand {
+    vertical-align: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    a.nav-link:hover {
+      transform: translateY(-2px);
+    }
+  }
+}

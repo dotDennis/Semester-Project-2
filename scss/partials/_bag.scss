@@ -1,0 +1,52 @@
+.container__bag,
+.container__admin {
+  width: 90%;
+  color: $black;
+
+  .admin__heading {
+    border-bottom: 1px solid $black;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .bag__total {
+    border-bottom: 1px solid $black;
+    margin-bottom: 2rem;
+  }
+
+  .bag__products,
+  .admin__products {
+    a {
+      color: $black;
+    }
+    .row {
+      max-height: 200px;
+
+      .image__container {
+        height: 100%;
+        margin-right: 20px;
+        &:hover {
+          img {
+            transform: rotate(0deg);
+          }
+        }
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .button__container {
+        display: flex;
+        justify-content: end;
+        button {
+          background: none;
+          border: none;
+          font-size: 2rem;
+          padding: 1rem; // to slightly increase clickable button size.
+        }
+      }
+    }
+  }
+}

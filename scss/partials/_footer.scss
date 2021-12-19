@@ -1,0 +1,50 @@
+.input {
+  width: 75%;
+  border: 1px solid $light;
+  background: none;
+  color: $light;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+footer {
+  margin-top: 6rem;
+  color: $light;
+
+  a {
+    color: rgba($light, 0.8);
+
+    &:hover {
+      color: rgba($light, 1);
+    }
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+
+  input {
+    @extend .input;
+  }
+
+  .footer__links {
+    width: 75%;
+  }
+
+  .footer__socials {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    li {
+      display: flex;
+      svg {
+        height: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+//
+// 1. Base
+// 2. Hero
+// 3. Content
+//
+
+// Base
+
+.title-h3 {
+  color: $black;
+  font-size: calc(0.5rem + 1vw); /* change on smaller breakpoints */
+}
+.title-p {
+  color: rgba($black, 0.8);
+  font-size: calc(0.1rem + 1vw); /* change on smaller breakpoints */
+}
+
+.price {
+  color: $lbrown;
+}
+.btn {
+  color: $black;
+  &:hover {
+    color: $black;
+  }
+  .material-icons {
+    font-size: calc(2rem + 1.5vw);
+  }
+}
+
+.col {
+  position: relative;
+  &:hover {
+    img {
+      transform: rotate(30deg) scale(1.4);
+
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.thumbnail {
+  overflow: hidden;
+
+  img {
+    transition: all 0.2s ease;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+// Base
+
+// Hero
+
+.hero {
+  height: 300px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light;
+  text-align: center;
+
+  h1 {
+    font-size: calc(3rem + 1.5vw);
+    font-weight: bold;
+    background: rgba($black, 0.5); // Added for accessibility
+    border-radius: 10px;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+// Hero
+
+// Content
+
+.carousel {
+  margin-top: 4rem;
+
+  &__title h3 {
+    @extend .title-h3;
+  }
+  &__title p {
+    @extend .title-p;
+  }
+  &__btn {
+    @extend .btn;
+  }
+
+  &__thumbnail {
+    @extend .thumbnail;
+  }
+
+  &__link {
+    @extend .link;
+  }
+}
+
+.categories {
+  &__men,
+  &__women {
+    margin-top: 6rem;
+  }
+}
+
+.container {
+  &__title h3 {
+    @extend .title-h3;
+  }
+  &__title p {
+    @extend .title-p;
+  }
+  &__btn {
+    @extend .btn;
+  }
+
+  &__thumbnail {
+    @extend .thumbnail;
+  }
+
+  &__link {
+    @extend .link;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  left: 18px;
+  color: $orange;
+  font-size: 0.1rem;
+  font-weight: lighter;
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    width: 85%;
+  }
+  .thumbnail img {
+    height: 350px;
+  }
+}
+
+// Content
