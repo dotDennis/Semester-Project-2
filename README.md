@@ -56,5 +56,5 @@ This is where you can leave your social links for people to contact you, such as
 
 [My Twitter page](https://www.twitter.com/d0tDennis)
 
-[My LinkedIn page](https://www.linkedin.com/dennissloevold)
+[My LinkedIn page](https://www.linkedin.com/in/dotDennis)
 
