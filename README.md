@@ -6,19 +6,16 @@ An e-commerce website that has both customer-facing and admin sections
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+A shoe brand featuring a clean website with multiple sections and views. Featuring BEM namings with SASS & admin authentication.
 
-You can add some bullet points if you'd like to:
+The website offers:
 
-- List item 1
-- List item 2
-- List item 3
+- Visitor pages
+- Admin dashboard
+- Product Cart
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com)
 
 ## Getting Started
