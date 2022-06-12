@@ -54,7 +54,7 @@ Make sure to open a pull request when contributing, so code can be reviewed.
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com/dotDennis)
+[My Twitter page](https://www.twitter.com/d0tDennis)
 
-[My LinkedIn page](www.linkedin.com/dennissloevold)
+[My LinkedIn page](https://www.linkedin.com/dennissloevold)
 
